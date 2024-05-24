@@ -137,12 +137,12 @@ Used metadata keys are listed below:
     
     The *ampersand* ('&') before 'H' makes it a keyboard accelerator.
 
-    > [!WARNING]
-    > It's better to append an *ellipsis* ('...') at the end of the name for this script,
-    > as a prompt is diplayed before this script actually works.
-    > 
-    > Yes, I should've done it. But I ended up capturing several images for this README
-    > without realizing it... 
+> [!WARNING]
+> It's better to append an *ellipsis* ('...') at the end of the name for this script,
+> as a prompt is diplayed before this script actually works.
+> 
+> Yes, I should've done it. But I ended up capturing several images for this README
+> without realizing it... 
 
 - `@description ...`
 
@@ -171,10 +171,6 @@ Used metadata keys are listed below:
         `%EXTENSION_PATH%` will be extended by **WinSCP** to the path of this script file itself.
         So, this specifies that this script file is the file to excute for **powershell.exe**.
 
-        > [!NOTE]
-        > `%EXTENSION_PATH%` refers the file in the directory for extensions, not the original one.
-        > So calling other script files with relative paths in the extension script will fail.
-
     - `-name "%Name%"`
 
         This provides the value of `"%Name%"` as an argument `$name` to the script.
@@ -183,6 +179,10 @@ Used metadata keys are listed below:
     - `-pause`
 
         Enables pausing switch. The script is designed to change its behavior with this switch, but if it's not enabled, the window displaying a message closes immediately.
+
+> [!NOTE]
+> `%EXTENSION_PATH%` refers the file in the directory for extensions, not the original one.
+> So calling other script files with relative paths in the extension script will fail.
 
 - `@homepage ...`
 
